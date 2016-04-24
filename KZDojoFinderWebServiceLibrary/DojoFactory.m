@@ -23,8 +23,12 @@
 	CLLocationCoordinate2D end = CLLocationCoordinate2DMake(region.center.latitude - (region.span.latitudeDelta / 2.0),
 																													region.center.longitude + (region.span.longitudeDelta / 2.0));
 
-	WebServiceDojoFinderConsumerProxy* proxyConsumer = [[WebServiceDojoFinderConsumerProxy alloc] initWithWebService:@"DojoFactory" andDojoFinderFactoryConsumer:consumer];
-	[DojoWebService dojosWithin:start to:end withConsumer:proxyConsumer];
+	WebServiceDojoFinderConsumerProxy* proxyConsumer = [[WebServiceDojoFinderConsumerProxy alloc]
+																											initWithWebService:@"DojoFactory"
+																											andDojoFinderFactoryConsumer:consumer];
+	[DojoWebService dojosWithin:start
+													 to:end
+								 withConsumer:proxyConsumer];
 	
 }
 @end

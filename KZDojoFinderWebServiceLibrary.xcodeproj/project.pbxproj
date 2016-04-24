@@ -13,6 +13,8 @@
 		704046691CC9F6910033B59C /* DojoFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 704046681CC9F6910033B59C /* DojoFactory.m */; };
 		704046721CCA0C060033B59C /* WebServiceDojoFinderConsumerProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 704046701CCA0C060033B59C /* WebServiceDojoFinderConsumerProxy.h */; };
 		704046731CCA0C060033B59C /* WebServiceDojoFinderConsumerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 704046711CCA0C060033B59C /* WebServiceDojoFinderConsumerProxy.m */; };
+		70A4FBE61CCB3EF600C64470 /* SessionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A4FBE51CCB3EF600C64470 /* SessionFactory.m */; };
+		70A4FBE81CCB4CEA00C64470 /* RegionContactFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A4FBE71CCB4CEA00C64470 /* RegionContactFactory.m */; };
 		70AAFDC01CC70DF10013555B /* KZDojoFinderWebServiceLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 70AAFDBF1CC70DF10013555B /* KZDojoFinderWebServiceLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		704046681CC9F6910033B59C /* DojoFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DojoFactory.m; sourceTree = "<group>"; };
 		704046701CCA0C060033B59C /* WebServiceDojoFinderConsumerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceDojoFinderConsumerProxy.h; sourceTree = "<group>"; };
 		704046711CCA0C060033B59C /* WebServiceDojoFinderConsumerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceDojoFinderConsumerProxy.m; sourceTree = "<group>"; };
+		70A4FBE51CCB3EF600C64470 /* SessionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionFactory.m; sourceTree = "<group>"; };
+		70A4FBE71CCB4CEA00C64470 /* RegionContactFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionContactFactory.m; sourceTree = "<group>"; };
 		70AAFDBC1CC70DF10013555B /* KZDojoFinderWebServiceLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KZDojoFinderWebServiceLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AAFDBF1CC70DF10013555B /* KZDojoFinderWebServiceLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KZDojoFinderWebServiceLibrary.h; sourceTree = "<group>"; };
 		70AAFDC11CC70DF10013555B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 				704046681CC9F6910033B59C /* DojoFactory.m */,
 				704046701CCA0C060033B59C /* WebServiceDojoFinderConsumerProxy.h */,
 				704046711CCA0C060033B59C /* WebServiceDojoFinderConsumerProxy.m */,
+				70A4FBE51CCB3EF600C64470 /* SessionFactory.m */,
+				70A4FBE71CCB4CEA00C64470 /* RegionContactFactory.m */,
 			);
 			name = Factories;
 			sourceTree = "<group>";
@@ -177,7 +183,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				704046691CC9F6910033B59C /* DojoFactory.m in Sources */,
+				70A4FBE81CCB4CEA00C64470 /* RegionContactFactory.m in Sources */,
 				704046731CCA0C060033B59C /* WebServiceDojoFinderConsumerProxy.m in Sources */,
+				70A4FBE61CCB3EF600C64470 /* SessionFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
