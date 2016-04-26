@@ -16,12 +16,16 @@
 +(void)dojosNear:(CLLocation *)userPoint withinKilometers:(double)range withConsumer:(id<DojoFinderFactoryConsumer>)consumer {
 	
 	// It would probably be nice to put this in a utility class somewhere, as I seem to keep on using it...
-	MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userPoint.coordinate, range * 1000, range * 1000);
+	MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userPoint.coordinate, range * 1000.0, range * 1000.0);
 	
-	CLLocationCoordinate2D start = CLLocationCoordinate2DMake(region.center.latitude + (region.span.latitudeDelta / 2.0),
-																														region.center.longitude - (region.span.longitudeDelta / 2.0));
-	CLLocationCoordinate2D end = CLLocationCoordinate2DMake(region.center.latitude - (region.span.latitudeDelta / 2.0),
-																													region.center.longitude + (region.span.longitudeDelta / 2.0));
+//	CLLocationCoordinate2D start = CLLocationCoordinate2DMake(region.center.latitude + (region.span.latitudeDelta / 2.0),
+//																														region.center.longitude - (region.span.longitudeDelta / 2.0));
+//	CLLocationCoordinate2D end = CLLocationCoordinate2DMake(region.center.latitude - (region.span.latitudeDelta / 2.0),
+//																													region.center.longitude + (region.span.longitudeDelta / 2.0));
+	CLLocationCoordinate2D start = CLLocationCoordinate2DMake(region.center.latitude + (region.span.latitudeDelta),
+																														region.center.longitude - (region.span.longitudeDelta));
+	CLLocationCoordinate2D end = CLLocationCoordinate2DMake(region.center.latitude - (region.span.latitudeDelta),
+																													region.center.longitude + (region.span.longitudeDelta));
 
 	WebServiceDojoFinderConsumerProxy* proxyConsumer = [[WebServiceDojoFinderConsumerProxy alloc]
 																											initWithWebService:@"DojoFactory"
