@@ -15,7 +15,7 @@
 		704046731CCA0C060033B59C /* WebServiceDojoFinderConsumerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 704046711CCA0C060033B59C /* WebServiceDojoFinderConsumerProxy.m */; };
 		70A4FBE61CCB3EF600C64470 /* SessionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A4FBE51CCB3EF600C64470 /* SessionFactory.m */; };
 		70A4FBE81CCB4CEA00C64470 /* RegionContactFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A4FBE71CCB4CEA00C64470 /* RegionContactFactory.m */; };
-		70AAFDC01CC70DF10013555B /* KZDojoFinderWebServiceLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 70AAFDBF1CC70DF10013555B /* KZDojoFinderWebServiceLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70AAFDC01CC70DF10013555B /* KZDojoFinderWebServiceDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 70AAFDBF1CC70DF10013555B /* KZDojoFinderWebServiceDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		704046711CCA0C060033B59C /* WebServiceDojoFinderConsumerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceDojoFinderConsumerProxy.m; sourceTree = "<group>"; };
 		70A4FBE51CCB3EF600C64470 /* SessionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionFactory.m; sourceTree = "<group>"; };
 		70A4FBE71CCB4CEA00C64470 /* RegionContactFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionContactFactory.m; sourceTree = "<group>"; };
-		70AAFDBC1CC70DF10013555B /* KZDojoFinderWebServiceLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KZDojoFinderWebServiceLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		70AAFDBF1CC70DF10013555B /* KZDojoFinderWebServiceLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KZDojoFinderWebServiceLibrary.h; sourceTree = "<group>"; };
+		70AAFDBC1CC70DF10013555B /* KZDojoFinderWebServiceDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KZDojoFinderWebServiceDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70AAFDBF1CC70DF10013555B /* KZDojoFinderWebServiceDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KZDojoFinderWebServiceDataSource.h; sourceTree = "<group>"; };
 		70AAFDC11CC70DF10013555B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +87,7 @@
 		70AAFDBD1CC70DF10013555B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70AAFDBC1CC70DF10013555B /* KZDojoFinderWebServiceLibrary.framework */,
+				70AAFDBC1CC70DF10013555B /* KZDojoFinderWebServiceDataSource.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,7 +97,7 @@
 			children = (
 				704046671CC9F1930033B59C /* Data */,
 				704046661CC9F1870033B59C /* Factories */,
-				70AAFDBF1CC70DF10013555B /* KZDojoFinderWebServiceLibrary.h */,
+				70AAFDBF1CC70DF10013555B /* KZDojoFinderWebServiceDataSource.h */,
 				70AAFDC11CC70DF10013555B /* Info.plist */,
 			);
 			path = KZDojoFinderWebServiceLibrary;
@@ -111,16 +111,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				704046721CCA0C060033B59C /* WebServiceDojoFinderConsumerProxy.h in Headers */,
-				70AAFDC01CC70DF10013555B /* KZDojoFinderWebServiceLibrary.h in Headers */,
+				70AAFDC01CC70DF10013555B /* KZDojoFinderWebServiceDataSource.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		70AAFDBB1CC70DF10013555B /* KZDojoFinderWebServiceLibrary */ = {
+		70AAFDBB1CC70DF10013555B /* KZDojoFinderWebServiceDataSource */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70AAFDC41CC70DF10013555B /* Build configuration list for PBXNativeTarget "KZDojoFinderWebServiceLibrary" */;
+			buildConfigurationList = 70AAFDC41CC70DF10013555B /* Build configuration list for PBXNativeTarget "KZDojoFinderWebServiceDataSource" */;
 			buildPhases = (
 				70AAFDB71CC70DF10013555B /* Sources */,
 				70AAFDB81CC70DF10013555B /* Frameworks */,
@@ -131,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = KZDojoFinderWebServiceLibrary;
+			name = KZDojoFinderWebServiceDataSource;
 			productName = KZDojoFinderWebServiceLibrary;
-			productReference = 70AAFDBC1CC70DF10013555B /* KZDojoFinderWebServiceLibrary.framework */;
+			productReference = 70AAFDBC1CC70DF10013555B /* KZDojoFinderWebServiceDataSource.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -150,7 +150,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 70AAFDB61CC70DF10013555B /* Build configuration list for PBXProject "KZDojoFinderWebServiceLibrary" */;
+			buildConfigurationList = 70AAFDB61CC70DF10013555B /* Build configuration list for PBXProject "KZDojoFinderWebServiceDataSource" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -162,7 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				70AAFDBB1CC70DF10013555B /* KZDojoFinderWebServiceLibrary */,
+				70AAFDBB1CC70DF10013555B /* KZDojoFinderWebServiceDataSource */,
 			);
 		};
 /* End PBXProject section */
@@ -297,7 +297,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.KZDojoFinderWebServiceLibrary;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KZDojoFinderWebServiceDataSource;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -317,7 +317,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.KZDojoFinderWebServiceLibrary;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KZDojoFinderWebServiceDataSource;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -325,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		70AAFDB61CC70DF10013555B /* Build configuration list for PBXProject "KZDojoFinderWebServiceLibrary" */ = {
+		70AAFDB61CC70DF10013555B /* Build configuration list for PBXProject "KZDojoFinderWebServiceDataSource" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70AAFDC21CC70DF10013555B /* Debug */,
@@ -334,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		70AAFDC41CC70DF10013555B /* Build configuration list for PBXNativeTarget "KZDojoFinderWebServiceLibrary" */ = {
+		70AAFDC41CC70DF10013555B /* Build configuration list for PBXNativeTarget "KZDojoFinderWebServiceDataSource" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70AAFDC51CC70DF10013555B /* Debug */,
